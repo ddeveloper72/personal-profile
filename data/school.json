@@ -1,0 +1,20 @@
+[
+    {
+        "edu_title": "Full Stack Diploma",
+        "edu_duration": "Feb 2018 - Present",
+        "authority": "The Code Institute",
+        "qualification": "Diploma"
+    },
+    {
+        "edu_title": "National Diploma in Biotechnology",
+        "edu_duration": "Feb 1992 - Feb 1996",
+        "authority": "Natal Technikon",
+        "qualification": "National Diploma"
+    },
+    {
+        "edu_title": "Work Place Education",
+        "edu_duration": "2000 - 2017",
+        "authority": "Pollution Control Systems<br> Irish Superior Safety Systems<br> RPS",
+        "qualification": "<br>ACTpro Hardware and Software Programming,<br>EST3 Systems FireWorks Installation & Programming,<br>EST3 Systems Installation & Programming,<br>FCC fire alarm factory certification from Edwards Systems Technologies,<br>IRC3 fire alarm factory certification from Edwards Systems Technologies,<br>City & Guilds 2D AutoCAD design,City & Guilds Electronics Servicing Part 1"    
+    }
+]

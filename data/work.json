@@ -1,0 +1,24 @@
+[
+    {
+        "position": "Projects Coordinator",
+        "duration": "Jul 2016 - Oct 2017",
+        "company": "Integrated Electronic Solutions and Security",
+        "company-brief": "IESS provide out a broad range of electronic services ranging from audio-visual, CCTV, security and access control solutions.",
+        "description": "Developed databases for managing the business information.  Coordinated service calls for the field engineers. Responsible processing work orders, invoicing and electronic filing. Ensured records were kept for document control and issued minutes."
+    },
+    {   
+        "position": "Project Manager",
+        "duration": "Feb 2015 - Dec 2015",
+        "company": "Chubb Ireland",
+        "company-brief": "Chubb Ireland provide out a range of services, from fire alarm systems, CCTV, security and access control solutions.",
+        "description": "Account manager for fire alarm contracts. Maintained customer KPIs, invoice accuracy and staff training log. Managed and coordinated site engineers as well as third party support contractors. Oversaw as well as carried out projects with electrical contractors for the site. Negotiated costs and procurement of materials for progressive build projects."
+    },
+    {   
+        "position": "Product Manager",
+        "duration": "Jul 2007 - Feb 2015",
+        "company": "Nulli-Fire Ltd",
+        "company-brief": "Nulli-Fire provided turnkey EST3 and Ziton fire alarm solutions, providing design assistance, installation, commissioning along with servicing and system training.",
+        "description": "Quotations, sales as well as materials procurement. Fire alarm system technical designer and engineer trainer, specialising in Edwards Systems Technologies and Xtralis aspiration systems. Carried out planning and coordination/management of site projects. Carried out equipment installation, programming. Specialised in equipment start-up, testing and commissioning."
+    }
+
+]
