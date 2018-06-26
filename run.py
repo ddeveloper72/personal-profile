@@ -42,12 +42,13 @@ def education():
     data = []
     with open("data/school.json", "r") as json_data:    
         data = json.load(json_data)
+        
     return render_template("education.html", page_title="Education", school_data = data)
 
 @app.route('/education/<education_name>')
 def about_education(education_name):
     education = {}
-
+  
     return render_template("education.html", education = education)
 
 if __name__ == '__main__':

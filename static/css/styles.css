@@ -1,25 +1,24 @@
+img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
 .title_heading, .intro {
     text-align: center
 }
 
-.col-5 img {
-    width: 100% ;
-    padding-bottom: 10px;
-}
-
-.col-12, .col-7 p {
-    font-size: 0.8em;
-}
-
-.col-7> subheading {
-    color: #868e96;
-}
-
 .job-descrip {
-    font-size: 0.8em; 
+    font-size: 0.6em; 
     color: #868e96;
 }
 
 .section.resume-section .resume-item .resume-date {
     min-width: none;
 }
+
+#awd_list {
+    line-height: 1em;
+    font-weight: 400;
+
+    }

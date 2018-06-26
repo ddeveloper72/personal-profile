@@ -4,21 +4,27 @@
 {% for education in school_data %}
 {% autoescape false %}
 
-<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Education">
+<section class="resume-section featureette p-3 d-flex flex-column">
+        {% if loop.index %2 != 3 %}
     <div class="my-auto">
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto col-7">
+            <div class="resume-content mr-auto col-xs-12  col-md-7">
                 <h3 class="mb-0">{{ education.edu_title }}</h3>
                 <div class="subheading mb-3">{{ education.authority }}</div>
                 <h3 class="job-descrip">Type of Award: {{ education.qualification }}</h3>
+                <div>{{ education.image_source }}</div>
+                
             </div>
-            <div class="resume-date text-md-right col-5">
-                <span class="text-primary">{{ education.edu_duration }}</span>
+            <div class="resume-date text-md-right col-xs-12 col-md-5">
+                <span class="text-primary">{{ education.edu_duration }}</span>                
             </div>
         </div>
     </div>
+    {% endif %}    
 </section>
+{% if loop.index != 3 %}
+<hr class="featureette-divider">
+{% endif %}
 {% endautoescape %}
-{% endfor %} 
-
+{% endfor %}
 {% endblock %}
