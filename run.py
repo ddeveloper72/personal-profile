@@ -51,5 +51,6 @@ def about_education(education_name):
     return render_template("education.html", education = education)
 
 if __name__ == '__main__':
-    app.run(debug=True)
-            
+    app.run(host=os.environ.get('IP'),
+            port=int(os.environ.get('PORT')),
+            debug=True)
