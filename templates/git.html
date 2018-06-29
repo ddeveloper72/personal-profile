@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block content %}
+<h2>{{ page_title }}
+    <span class="fa-stack">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+    </span>
+</h2>
+<section>
+
+</section>
+<section class="container-fluid">
+    <div class="row center-form ">
+        <div class="col-5">
+            <h3 class="contact-heading uppercase text-center">View My GitHub Projects:</h3>
+            <h5 class="subheading text-center">(or change the username to search
+                <br>for other user profiles)</h5>
+        </div>
+        <div class="col-7">
+            <input type="text" id="gh-username" value="ddeveloper72" oninput="fetchGitHubInformation()">
+            <div id="gh-user-data" class="clearfix"></div>
+            <div id="gh-repo-data" class="clearfix"></div>
+        </div>
+    </div>
+
+
+</section>
+{% endblock %}

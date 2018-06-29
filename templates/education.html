@@ -1,5 +1,8 @@
 {% extends 'base.html' %} {% block content %}
-<h2>{{ page_title }}</h2>
+<h2>{{ page_title }} <span class="fa-stack">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+</span></h2>
 
 {% for education in school_data %} {% autoescape false %}
 
@@ -14,7 +17,7 @@
                     {% if loop.index !=3 %}
                     <span class="fa-stack">
                         <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
                     </span>
                     {% endif %} {{ education.authority }}</div>
 

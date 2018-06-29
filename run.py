@@ -10,18 +10,17 @@ def index():
     return render_template("index.html")
     
 
-@app.route('/interests')
-def interests():
-    return render_template("interests.html", page_title="Interests")
+@app.route('/git')
+def git():
+    return render_template("git.html", page_title="Git Profile")
 
    
-@app.route('/contact', methods=["GET", "POST"])
+@app.route('/contact')
 def contact():
     if request.method == "POST":
         flash("Thanks {}, we have received your message!".format(
             request.form["name"]))
-    return render_template("contact.html", page_title="Contact")
-    
+    return render_template("contact.html", page_title="Contact")    
 
 
 @app.route('/work')

@@ -1,17 +1,13 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 <h2>{{ page_title }}</h2>
 <div class="md-12">
   <div class="title_heading">
-      <h1 >Welome!</h1>
-      <h3>to<br>I built this</h3>
+    <h1>Welome!</h1>
+    <img class="profile_photo" src="{{ url_for('static', filename='img/profile-image.jpg')}}" alt="">
   </div>
-  <p>Well, now that you're here, you have probably already seen my LinkedIn. bio</p>
-  </div>
-    
-    
-    
+</div>
+
+
+
 
 {% endblock %}
-
-

@@ -19,8 +19,11 @@
         
         <!-- Custom styles for this template -->
     <link href="{{ url_for('static', filename='css/clean-blog.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/github-styles.css')}}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet">
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/github-informaion.js')}}"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
       (function() {
@@ -44,7 +47,7 @@
               <a class="nav-link" href="{{url_for('index')}}">Home</a>
             </li>   
             <li class="nav-item">
-                <a class="nav-link" href="{{url_for('interests')}}">Interests</a>
+                <a class="nav-link" href="{{url_for('git')}}">Git Profile</a>
               </li>
             <li class="nav-item">
               <a class="nav-link" href="{{url_for('contact')}}">Contact</a>

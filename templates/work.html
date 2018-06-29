@@ -1,5 +1,8 @@
 {% extends 'base.html' %} {% block content %}
-<h2>{{ page_title }}</h2>
+<h2>{{ page_title }} <span class="fa-stack">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+</span></h2>
 
 {% for experience in work_data %}
 
@@ -12,7 +15,7 @@
                 <div class="subheading mb-3">
                         <span class="fa-stack">
                             <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-building fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
                         </span>
                         {{ experience.company }}</div>
                 <p class="job-descrip">{{ experience.description }}</p>
