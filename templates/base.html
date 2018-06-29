@@ -21,6 +21,13 @@
     <link href="{{ url_for('static', filename='css/clean-blog.css')}}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet">
     
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          emailjs.init("user_otJXtwN3f0lIaupelyNZO");
+      })();
+  </script>
+  
     </head>
     <body>
         <!-- Navigation -->
@@ -61,7 +68,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
               <h1>Duncan Falconer</h1>
-              <span class="subheading">Full Stack Web Developer<br> Student at the Code Institute</span>
+              <span class="subheading"><strong>Student Full Stack Web Developer</strong><br> at the<br><strong>Code Institute</strong></span>
             </div>
           </div>
         </div>
@@ -120,5 +127,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="{{ url_for('static', filename='js/clean-blog.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/sendEmail.js')}}"></script>
     </body>
 </html>

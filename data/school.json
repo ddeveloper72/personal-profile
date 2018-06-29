@@ -4,20 +4,20 @@
         "edu_duration": "February 2018 - Present",
         "authority": "The Code Institute",
         "qualification": "Studying toward a Diploma<br><small>(Credit rated by EDINBURGH NAPIER UNIVERSITY)</small>",
-        "image_source": "<img class=\"featureette-image img-fluid\" src=\"/static/img/ci.PNG\" alt=\"The Code Institute\">"
+        "image_source": "<img class=\"featureette-image img-fluid\" style=\"max-width: 40%;\" src=\"/static/img/ci.PNG\" alt=\"The Code Institute\">"
     },
     {
         "edu_title": "National Diploma in Biotechnology",
         "edu_duration": "February 1992 - February 1996",
         "authority": "Natal Technikon",
         "qualification": "National Diploma",
-        "image_source": "<img class=\"featureette-image img-fluid\" src=\"/static/img/tnt.PNG\" alt=\"Natal Technikon\">"
+        "image_source": "<img class=\"featureette-image img-fluid\" style=\"max-width: 40%;\" src=\"/static/img/tnt.PNG\" alt=\"Natal Technikon\">"
     },
     {
         "edu_title": "Work Place Education",
         "edu_duration": "From 1996 - 2016",
         "authority": "Pollution Control Systems<br>Irish Superior Safety Systems<br>RPS<br>Nulli-Fire<br>IESS",
-        "qualification": "<span id=\"awd_list\"><br><ul><li>ACTpro Hardware and Software Programming,</li><li>EST3 Systems FireWorks Installation & Programming,</li><li>EST3 Systems Installation & Programming,</li><li>FCC fire alarm factory certification from Edwards Systems Technologies,</li><li>IRC3 fire alarm factory certification from Edwards Systems Technologies,</li><li>City & Guilds 2D AutoCAD design,</li><li>City & Guilds Electronics Servicing Part 1</li></ul></span>",
+        "qualification": "<span><br><ul id=\"awd_list\"><li>ACTpro Hardware and Software Programming,</li><li>EST3 Systems FireWorks Installation & Programming,</li><li>EST3 Systems Installation & Programming,</li><li>FCC fire alarm factory certification from Edwards Systems Technologies,</li><li>IRC3 fire alarm factory certification from Edwards Systems Technologies,</li><li>City & Guilds 2D AutoCAD design,</li><li>City & Guilds Electronics Servicing Part 1</li></ul></span>",
         "image_source": "<img class=\"featureette-image img-fluid\" src=\"/static/img/banner.PNG\" alt=\"Companies\">"
     }
 ]

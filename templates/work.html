@@ -9,7 +9,12 @@
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto col-7">
                 <h3 class="mb-0">{{ experience.position }}</h3>
-                <div class="subheading mb-3">{{ experience.company }}</div>
+                <div class="subheading mb-3">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-building fa-stack-1x fa-inverse"></i>
+                        </span>
+                        {{ experience.company }}</div>
                 <p class="job-descrip">{{ experience.description }}</p>
             </div>
             <div class="resume-date text-md-right col-5">
