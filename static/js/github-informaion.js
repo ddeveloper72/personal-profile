@@ -1,3 +1,5 @@
+// Function adapted from original source code, used by the Code Institute tutorial with thanks.
+
 function userInformationHTML(user) {
     return `
         <h2>${user.name}
