@@ -1,25 +1,29 @@
 {% extends 'base.html' %} {% block content %}
-<h2>{{ page_title }} <span class="fa-stack">
-    <i class="fa fa-circle fa-stack-2x"></i>
-    <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
-</span></h2>
+<h2>{{ page_title }}
+    <span class="fa-stack">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+    </span>
+</h2>
 
-{% for experience in work_data %}
+{% for experience in work_data %} {% autoescape false %}
 
 <section class="resume-section featureette p-3 d-flex flex-column">
-    {% if loop.index %2 != 2 %}
+    {% if loop.index %2 != 4 %}
     <div class="my-auto">
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto col-xs-12 col-md-7">
-                
+
                 <h3 class="mb-0">{{ experience.position }}</h3>
                 <div class="subheading mb-3">
-                        <span class="fa-stack">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
-                        </span>
-                        {{ experience.company }}</div>
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-angle-right fa-stack-1x fa-inverse"></i>
+                    </span>
+                    {{ experience.company }}</div>
+
                 <p class="job-descrip">{{ experience.description }}</p>
+                <div>{{ experience.image_source }}</div> 
             </div>
             <div class="resume-date text-md-right col-xs-12 col-md-5">
                 <span class="text-primary">{{ experience.duration }}</span>
@@ -28,8 +32,5 @@
     </div>
     {% endif %}
 </section>
-{% if loop.index != 3 %}
-<hr class="featureette-divider">
-{% endif %}
-{% endfor %}
-{% endblock %}
+{% if loop.index != 4 %}
+<hr class="featureette-divider"> {% endif %} {% endautoescape %} {% endfor %} {% endblock %}
