@@ -2,13 +2,13 @@
 
 This was my very first personal Python app, which was built from following different coding tutorials.
 
-To create this app, I combined two different bootstrap templates by Start Bootstrap [Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/) and [Resume](https://startbootstrap.com/template-overviews/resume/).  I also learned how to use four loops in Flask to arrange my resume and work experience data which is stored as Json data.
+   * To create this app, I combined two different bootstrap templates by Start Bootstrap [Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/) and [Resume](https://startbootstrap.com/template-overviews/resume/).  I also learned how to use four loops in Flask to arrange my resume and work experience data which is stored as Json data.
+    
+   * The GitHub search API, written in JavaScript is adapted from one of [Code Institute](https://courses.codeinstitute.net/) tutorials, the Rosie Resume.
 
-The GitHub search API, written in JavaScript is adapted from one of [Code Institute](https://courses.codeinstitute.net/) tutorials, the Rosie Resume.
+**The following are two code samples, is the GitHub API and the second is a snippet of the education Json file data source.  My career data is stored in a similar way, as separate Json file.**
 
-**The following are two code samples, is the GitHub API and the second is a snippet of the education Json file data source.  My career data is stored in a similar way, as separate Json file.
-
-1 GitHub API Code sample:
+### 1 GitHub API Code sample:
 
 ```javascript
 function fetchGitHubInformation(event) {
@@ -51,7 +51,7 @@ function fetchGitHubInformation(event) {
 }
 ```
 
-2 Source data in Json format:
+### 2 Source data in Json format:
 
 ```javascript
 [
@@ -64,3 +64,4 @@ function fetchGitHubInformation(event) {
     }
 ]
 ```
+My plans are to let this web page evolve as time permits and use it to demonstrate my coding knowledge as it grows. 
