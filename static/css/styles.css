@@ -1,6 +1,9 @@
 .profile_photo {
-    max-width: 25%;
     border-radius: 50%;
+}
+
+.brand_collage {
+    max-width: 25%;
 }
 
 .title_heading, .intro {
