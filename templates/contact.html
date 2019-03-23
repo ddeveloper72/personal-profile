@@ -28,13 +28,13 @@
                 <div class="form-group floating-label-form-group controls">
                     <label>Email Address</label>
                     <input type="email" class="form-control" placeholder="Email Address" name="email" id="email" required data-validation-required-message="Please enter your email address.">
-                    <p class="help-block text-danger"></p>
+                    <p class="help-block text-danger" id='result'></p>
                 </div>
             </div>
             <div class="control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls">
                     <label>Phone Number</label>
-                    <input type="tel" class="form-control" placeholder="Phone Number" name="number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                    <input type="tel" class="form-control" placeholder="Eg. (000) 00-00000" name="number" id="phone" data-mask="(999) 999-9999" required data-validation-required-message="Please enter a valid phone number.">
                     <p class="help-block text-danger"></p>
                 </div>
             </div>
@@ -51,6 +51,7 @@
                 <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
             </div>
         </form>
+        
     </div>
 </div>
 
