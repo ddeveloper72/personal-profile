@@ -21,6 +21,7 @@
     <link href="{{ url_for('static', filename='css/clean-blog.css')}}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/github-styles.css')}}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png')}}"/>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/github-informaion.js')}}"></script>
@@ -129,18 +130,21 @@
           </ul>
 
             <p class="copyright text-muted">"All logos and trademarks are the property of the respective trademark owners"</p>
-            <p class="copyright text-muted">Copyright &copy; Duncan Falconer 2018</p>
+            <p class="copyright text-muted">Copyright &copy; Duncan Falconer 2019</p>
           </div>
         </div>
       </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="{{ url_for('static', filename='js/clean-blog.min.js')}}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/sendEmail.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+    <script src="{{ url_for('static', filename='js/sendEmail.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
     </body>
 </html>
