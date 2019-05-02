@@ -60,6 +60,14 @@ def not_found(e):
     """
     return render_template("404.html")
 
+
+@app.errorhandler(500)
+def not_found(e):
+    """ 
+    Inbuilt function which takes error as parameter 
+    """
+    return render_template("500.html")
+
 if __name__ == '__main__':
     app.run(host=os.getenv('IP'),
             port=os.getenv('PORT'),
