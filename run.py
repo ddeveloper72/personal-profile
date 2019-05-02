@@ -54,11 +54,11 @@ def about_education(education_name):
 # Page not found 404 Views                                                                                 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 @app.errorhandler(404)
-def page_not_found(e):
+def not_found(e):
     """ 
     Inbuilt function which takes error as parameter 
     """
-    return render_template('404.html')
+    return render_template("404.html")
 
 if __name__ == '__main__':
     app.run(host=os.getenv('IP'),
