@@ -50,6 +50,16 @@ def about_education(education_name):
   
     return render_template("education.html", education = education)
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# Page not found 404 Views                                                                                 #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+@app.errorhandler(404)
+def page_not_found(e):
+    """ 
+    note that we set the 404 status explicitly 
+    """
+    return render_template('404.html'), 404
+
 if __name__ == '__main__':
     app.run(host=os.getenv('IP'),
             port=os.getenv('PORT'),
