@@ -53,18 +53,22 @@ def about_education(education_name):
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # Page not found 404 Views                                                                                 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
 @app.errorhandler(404)
-def not_found(e):
+def not_found(error):
     """ 
     Inbuilt function which takes error as parameter 
     """
-    return render_template("404.html")
+    return render_template("404.html"), 404
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# Internal Error Views                                                                                 #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 @app.errorhandler(500)
-def not_found(e):
+def internal_error(error):
     """ 
-    Inbuilt function which takes error as parameter 
+    Inbuilt function which takes error as parameter
     """
     return render_template("500.html")
 
