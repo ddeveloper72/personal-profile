@@ -1,0 +1,75 @@
+a:hover {
+  color: none;
+}
+
+.title_heading,
+.intro {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.footer__list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer__item span {
+  display: inline-block;
+  width: 2em;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer__item span:hover {
+  -webkit-transform: translateY(-0.2em);
+          transform: translateY(-0.2em);
+  color: #212529;
+}
+
+.footer__link {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2rem 1rem rgba(33, 37, 41, 0.2);
+          box-shadow: 0 2rem 1rem rgba(33, 37, 41, 0.2);
+}
+
+.footer__link:hover {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  font-size: 120%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer__link:focus, .footer__link:active {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  font-size: 100%;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.profile_photo {
+  border-radius: 50%;
+}
+
+.profile_photo {
+  border-radius: 50%;
+}
+
+.brand_collage {
+  max-width: 60%;
+}
+
+.job-descrip {
+  font-size: 0.8em;
+  color: #868e96;
+}
+
+.section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+/*# sourceMappingURL=main.css.map */
