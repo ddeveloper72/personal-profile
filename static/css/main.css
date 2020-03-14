@@ -52,6 +52,15 @@ a:hover {
           transform: translateY(0);
 }
 
+.footer__copyright {
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), to(#6d6d6d));
+  background-image: linear-gradient(to right, #333, #6d6d6d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .profile_photo {
   border-radius: 50%;
 }
