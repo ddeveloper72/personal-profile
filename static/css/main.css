@@ -61,7 +61,10 @@ a:hover {
   color: transparent;
 }
 
-.profile_photo {
+.navigation__profile-pic {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
   border-radius: 50%;
 }
 
