@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    /* capture any before and after pseudo-elements in universal selector */
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // this is also what 1rem is.
+    /* 100% is a based on default 16px.  We prefer 10px */
+    /* so calculate the percentage 100/16 = 0.625 => 62.5% */
+    /* We can now use a function that will let a user change  */
+    /* the font-size to suit their needs. eg they may select size 20 */
+    /* and we give them .625*20 = 12.5px */
+    /* Note that rem doesn't work on sites written for IE9 or older. */
+
+}
+
+body {
+    /* enable inheritance of box-sizing for later customization */
+    box-sizing: border-box;
+    // padding: 3rem;
+}
