@@ -1,5 +1,18 @@
+a {
+    color: inherit;
+}
+
 a:hover {
-    color: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: $color-grey-dark-3;
 }
 
 .title_heading,
@@ -10,8 +23,3 @@ a:hover {
 .uppercase {
     text-transform: uppercase;
 }
-
-// #awd_list {
-//     line-height: 2em;
-//     font-weight: 400;
-// }
