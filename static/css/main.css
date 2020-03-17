@@ -1,5 +1,44 @@
+*,
+*::after,
+*::before {
+  /* capture any before and after pseudo-elements in universal selector */
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /* 100% is a based on default 16px.  We prefer 10px */
+  /* so calculate the percentage 100/16 = 0.625 => 62.5% */
+  /* We can now use a function that will let a user change  */
+  /* the font-size to suit their needs. eg they may select size 20 */
+  /* and we give them .625*20 = 12.5px */
+  /* Note that rem doesn't work on sites written for IE9 or older. */
+}
+
+body {
+  /* enable inheritance of box-sizing for later customization */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
 a:hover {
-  color: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #333;
 }
 
 .title_heading,
@@ -62,10 +101,64 @@ a:hover {
 }
 
 .navigation__profile-pic {
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  border-radius: 50%;
+  height: 6%;
+  width: 6%;
+  padding: 0;
+  border-radius: 5rem;
+  -webkit-box-shadow: 0 10px 4px rgba(33, 37, 41, 0.2);
+          box-shadow: 0 10px 4px rgba(33, 37, 41, 0.2);
+  outline-offset: 2rem;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.navigation__profile-pic:hover {
+  display: block;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  outline: 0.5rem solid #6d6d6d;
+  outline-offset: 0.3rem;
+  -webkit-box-shadow: 0 12px 6px rgba(51, 51, 51, 0.3);
+          box-shadow: 0 12px 6px rgba(51, 51, 51, 0.3);
+  -webkit-transform: translateY(1rem) scale(1.2);
+          transform: translateY(1rem) scale(1.2);
+}
+
+.navigation__list {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.navigation__list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navigation__item {
+  display: contents;
+  text-shadow: 0 10px 4px rgba(33, 37, 41, 0.2);
+}
+
+.navigation__item-link-1 {
+  padding: 10px 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.navigation__item-link-1:hover {
+  margin-bottom: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), to(#6d6d6d));
+  background-image: linear-gradient(to right, #333, #6d6d6d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 12px 6px rgba(51, 51, 51, 0.4);
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  color: transparent;
 }
 
 .profile_photo {
