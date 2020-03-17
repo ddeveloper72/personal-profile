@@ -50,6 +50,50 @@ body {
   text-transform: uppercase;
 }
 
+.heading-secondary {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), to(#6d6d6d));
+  background-image: linear-gradient(to right, #333, #6d6d6d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  text-shadow: 0.05rem 0.6rem 0.4rem rgba(33, 37, 41, 0.6);
+}
+
+.heading-secondary-icon {
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  -webkit-transform: translateY(0.6rem) scale(1);
+          transform: translateY(0.6rem) scale(1);
+}
+
+.heading-secondary-icon::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.heading-secondary-icon:hover {
+  -webkit-transform: translateY(-0.2rem) scale(1.12);
+          transform: translateY(-0.2rem) scale(1.12);
+  text-shadow: 0.06rem 0.6rem 0.42rem rgba(33, 37, 41, 0.8);
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.utility-margin-bottom-std {
+  margin-bottom: 4rem;
+}
+
 .footer__list::after {
   content: "";
   display: table;

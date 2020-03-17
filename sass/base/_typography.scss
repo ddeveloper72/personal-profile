@@ -50,3 +50,15 @@ body {
         }
     }
 }
+
+.heading-tertiary {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    display: inline-block;
+
+    &-sub {
+
+    }
+
+}
