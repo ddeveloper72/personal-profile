@@ -1,9 +1,69 @@
 .navigation {
 
+
     &__profile-pic {
-        height: 30px;
-        width: 30px;
-        display: inline-block;
-        border-radius: 50%;
+        height: 6%;
+        width: 6%;
+        padding: 0;
+        border-radius: $border-rad-big;
+        box-shadow: 0 10px 4px rgba($color-black, .2);
+        outline-offset: 2rem;
+        transition: all .8s;
+
+        &:hover {
+            display: block;
+            overflow: hidden;
+            border-radius: $border-rad-small;
+            outline: .5rem solid $color-grey-dark-2;
+            outline-offset: $border-rad-small;
+            box-shadow: 0 12px 6px rgba($color-grey-dark-3, .3);
+            transform: translateY(1rem) scale(1.2);
+
+        }
     }
+
+    &__button {}
+
+    &__list {
+        @include clearfix;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: $color-white;
+
+    }
+
+    &__item {
+        display: contents;
+        text-shadow: 0 10px 4px rgba($color-black, .2);
+
+
+        &-link-1 {
+            // display: inline-block;
+            padding: 10px 20px;
+            transition: all .3s;
+
+            &:hover {
+                // display: inline-block;
+                margin-bottom: none;
+                background-image: linear-gradient(to right, $color-grey-dark-3, $color-grey-dark-2);
+                // clip the background color to the same template as the text
+                -webkit-background-clip: text;
+                background-clip: text;
+                text-shadow: 0 12px 6px rgba($color-grey-dark-3, .4);
+                transform: translateY(-4px);
+                color: transparent;
+
+            }
+
+
+        }
+
+
+
+    }
+
+
+
 }
