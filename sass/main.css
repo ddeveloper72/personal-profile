@@ -1,0 +1,271 @@
+*,
+*::after,
+*::before {
+  /* capture any before and after pseudo-elements in universal selector */
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /* 100% is a based on default 16px.  We prefer 10px */
+  /* so calculate the percentage 100/16 = 0.625 => 62.5% */
+  /* We can now use a function that will let a user change  */
+  /* the font-size to suit their needs. eg they may select size 20 */
+  /* and we give them .625*20 = 12.5px */
+  /* Note that rem doesn't work on sites written for IE9 or older. */
+}
+
+body {
+  /* enable inheritance of box-sizing for later customization */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #333;
+}
+
+.title_heading,
+.intro {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), to(#6d6d6d));
+  background-image: linear-gradient(to right, #333, #6d6d6d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  text-shadow: 0.05rem 0.6rem 0.4rem rgba(33, 37, 41, 0.6);
+}
+
+.heading-secondary-icon {
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  -webkit-transform: translateY(0.6rem) scale(1);
+          transform: translateY(0.6rem) scale(1);
+}
+
+.heading-secondary-icon::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.heading-secondary-icon:hover {
+  -webkit-transform: translateY(-0.2rem) scale(1.12);
+          transform: translateY(-0.2rem) scale(1.12);
+  text-shadow: 0.06rem 0.6rem 0.42rem rgba(33, 37, 41, 0.8);
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.utility-margin-bottom-std {
+  margin-bottom: 4rem;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+}
+
+.form__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1rem 2rem rgba(33, 37, 41, 0.1);
+          box-shadow: 0 1rem 2rem rgba(33, 37, 41, 0.1);
+  border-bottom: 3px solid #333;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid #777;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #6d6d6d;
+}
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: .7rem;
+  display: block;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+}
+
+.footer__list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer__item span {
+  display: inline-block;
+  width: 2em;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer__item span:hover {
+  -webkit-transform: translateY(-0.2em);
+          transform: translateY(-0.2em);
+  color: #212529;
+}
+
+.footer__link {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2rem 1rem rgba(33, 37, 41, 0.2);
+          box-shadow: 0 2rem 1rem rgba(33, 37, 41, 0.2);
+}
+
+.footer__link:hover {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  font-size: 120%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer__link:focus, .footer__link:active {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  font-size: 100%;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.footer__copyright {
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), to(#6d6d6d));
+  background-image: linear-gradient(to right, #333, #6d6d6d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.navigation__profile-pic {
+  height: 6%;
+  width: 6%;
+  padding: 0;
+  border-radius: 5rem;
+  -webkit-box-shadow: 0 10px 4px rgba(33, 37, 41, 0.2);
+          box-shadow: 0 10px 4px rgba(33, 37, 41, 0.2);
+  outline-offset: 2rem;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.navigation__profile-pic:hover {
+  display: block;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  outline: 0.5rem solid #6d6d6d;
+  outline-offset: 0.3rem;
+  -webkit-box-shadow: 0 12px 6px rgba(51, 51, 51, 0.3);
+          box-shadow: 0 12px 6px rgba(51, 51, 51, 0.3);
+  -webkit-transform: translateY(1rem) scale(1.2);
+          transform: translateY(1rem) scale(1.2);
+}
+
+.navigation__list {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.navigation__list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navigation__item {
+  display: contents;
+  text-shadow: 0 10px 4px rgba(33, 37, 41, 0.2);
+}
+
+.navigation__item-link-1 {
+  padding: 10px 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.navigation__item-link-1:hover {
+  margin-bottom: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), to(#6d6d6d));
+  background-image: linear-gradient(to right, #333, #6d6d6d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 12px 6px rgba(51, 51, 51, 0.4);
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  color: transparent;
+}
+
+.profile_photo {
+  border-radius: 50%;
+}
+
+.brand_collage {
+  max-width: 60%;
+}
+
+.job-descrip {
+  font-size: 0.8em;
+  color: #868e96;
+}
+
+.section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+/*# sourceMappingURL=main.css.map */

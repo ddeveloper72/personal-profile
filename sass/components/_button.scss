@@ -1,0 +1,83 @@
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: $border-rad-big;
+        transition: all .2s;
+        /* define button position for  btn-white::after */
+        position: relative;
+        font-size: $default-font-size;
+
+        // Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+
+    &--animated {
+        /* animation timing and delay */
+        animation: moveInBottom .5s ease-out .75s;
+        /* apply styles before the animation starts */
+        animation-fill-mode: backwards;
+    }
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        /* x y blur colour with % opacity give the
+        look of the button up above base image */
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+        &::after {
+            /* scale pseudo-button in the X & Y planes */
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active,
+    &:focus {
+        transform: translateY(-0.1rem);
+        /* reduce shadow size as well as the blur to give 
+        appearance of button moving close to base image */
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        outline: none;
+    }
+
+    // &--white {
+    //     background-color: $color-white;
+    //     color: $color-grey-dark;
+
+    //     &::after {
+    //         background-color: $color-white;
+    //     }
+    // }
+
+    // &--green {
+    //     background-color: $color-primary;
+    //     color: $color-white;
+
+    //     &::after {
+    //         background-color: $color-primary;
+    //     }
+    // }
+
+    &::after {
+        /* crate a pseudo button to go behind the button */
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: $border-rad-big;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        /* btn::after is the initial state for btn:hover::after */
+        transition: all .4s;
+    }
+
+}
