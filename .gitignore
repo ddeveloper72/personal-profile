@@ -3,3 +3,4 @@
 env
 .vscode/settings.json
 *.code-workspace
+static/css/main.css.map
