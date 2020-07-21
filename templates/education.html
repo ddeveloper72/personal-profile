@@ -1,18 +1,18 @@
 {% extends 'base.html' %} {% block content %}
-<h2>{{ page_title }} <span class="fa-stack">
+<h2 class="heading-secondary">{{ page_title }} <span class="fa-stack">
     <i class="fa fa-circle fa-stack-2x"></i>
-    <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+    <i class="heading-secondary-icon fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
 </span></h2>
 
 {% for education in school_data %} {% autoescape false %}
 
-<section class="resume-section featureette p-3 d-flex flex-column">
+<section class="resume-section featurette p-3 d-flex flex-column">
     {% if loop.index %2 != 3 %}
     <div class="my-auto">
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto col-xs-12 col-md-7">
 
-                <h3 class="mb-0">{{ education.edu_title }}</h3>
+                <h3 class="heading-tertiary utility-margin-bottom-std">{{ education.edu_title }}</h3>
                 <div class="subheading mb-3">
                     {% if loop.index !=3 %}
                     <span class="fa-stack">
@@ -21,7 +21,7 @@
                     </span>
                     {% endif %} {{ education.authority }}</div>
 
-                <h3 class="job-descrip">Type of Award: {{ education.qualification }}</h3>
+                <h3 class="heading-tertiary-sub job-descrip">Type of Award: {{ education.qualification }}</h3>
                 <div>{{ education.image_source }}</div>
             </div>
             <div class="resume-date text-md-right col-xs-12 col-md-5">
