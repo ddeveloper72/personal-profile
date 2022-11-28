@@ -1,5 +1,4 @@
 .venv
 .code-workspace
-env
 .vscode/settings.json
 *.code-workspace

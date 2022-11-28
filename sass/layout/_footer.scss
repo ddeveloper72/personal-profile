@@ -1,0 +1,47 @@
+.footer {
+    
+    &__list {
+        @include clearfix;
+
+    }
+
+    &__item span {
+        display: inline-block;
+        width: 2em;
+        transition: all .3s;
+        
+        &:hover {
+            transform: translateY(-0.2em);
+            color: $color-black;
+        }
+    }
+    
+    &__link {
+        border-radius: 50%;
+        box-shadow: 0 2rem 1rem rgba($color-black, .2);
+        
+        
+        &:hover {
+            transform: rotate(5deg);
+            font-size: 120%;
+            transition: all .3s;
+
+        }
+
+        &:focus,
+        &:active {
+            transform: rotate(0);
+            font-size: 100%;
+            transform: translateY(0);
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+        background-image: linear-gradient(to right, $color-grey-dark-3, $color-grey-dark-2);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+       
+    }
+}
