@@ -1,5 +1,12 @@
 [
     {
+        "edu_title": "ITIL 4 Foundation + exam",
+        "edu_duration": "June 2022 - 3 days",
+        "authority": "Axelos & eHealth Training",
+        "qualification": "ITIL 4 Foundation Certificate in IT Service Management",
+        "image_source": "<img class=\"featureette-image img-fluid\" style=\"max-width: 40%;\" src=\"/static/img/ITIL.jpg\" alt=\"PeopleCert\">"
+    },
+    {
         "edu_title": "Full Stack Diploma in Software Development",
         "edu_duration": "February 2018 - April 2019",
         "authority": "The Code Institute",
